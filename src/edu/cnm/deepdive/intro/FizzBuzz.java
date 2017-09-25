@@ -37,10 +37,6 @@ public class FizzBuzz {
     if (value % 5 == 0) {
       result += "buzz";
     }
-    if(result == "") {
-      //result =  "" + value;
-      result += value;
-    }
-    return result;
+    return result.isEmpty() ? Integer.toString(value) : result;
   }
 }
